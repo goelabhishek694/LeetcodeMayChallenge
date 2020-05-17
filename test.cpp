@@ -22,6 +22,8 @@ int countDown(vector<int>& arr, int k, int count, int finAns){
 
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
   int testCases; cin>>testCases;
   for(int i=0;i<testCases;i++){
     int n; cin>>n; int k; cin>>k;
@@ -32,7 +34,7 @@ int main(){
     int count=0; int finAns=k;
     int ans=countDown(arr,k,count,finAns);
     cout<<"Case"<<" "<<"#"<<i+1<<":"<<" "<<ans<<"\n";
-    
+    return 0;
   }
   
   
